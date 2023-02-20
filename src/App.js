@@ -51,7 +51,7 @@ function App() {
         <div className="header">
           <h1 onClick={() => setSearch('')} style={{cursor: 'pointer'}}>MyAnimeList</h1>
           <div className="search-box">
-              <input type="search" placeholder="Add a space after you search your anime ..." 
+              <input type="search" placeholder="Search your anime ..." 
               onChange={(e)=>setSearch(e.target.value)}/>
           </div>
         </div>

@@ -21,6 +21,9 @@ body {
     color: white;
     z-index: 11;
 }
+.header h1 {
+    color: red;
+}
 .header .search-box input {
     outline: none;
     border: none;
@@ -69,19 +72,20 @@ body {
     cursor: pointer;
 }
 .anime-row .text-heading {
-  margin-left: 20rem;
+  color: red;
   margin-top: 1rem;
 }
 .MY_LIST {
   margin-left: 15rem;
   margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
 }
 .MY_LIST .ROW {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+}
+.MY_LIST .TEXT_HEADING {
+    color: red;
 }
 .card {
     width: 230px;
@@ -140,3 +144,116 @@ body {
     cursor: pointer;
 }
 
+/* ============================ MEDIA ========================== */
+
+@media screen and (max-width: 1440px) {
+    .header h1 {
+      font-size: 24px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .anime-row {
+        margin-left: 20rem;
+    }
+    .anime-row .row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .anime-row .text-heading {
+      margin-left: 0;
+    }
+    .MY_LIST {
+        margin-left: 20rem;
+    }
+    .MY_LIST .ROW {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .MY_LIST .TEXT_HEADING {
+        margin-left: 0rem;
+    }
+  }
+
+
+@media screen and (max-width: 1024px) {
+    .header h1 {
+        font-size: 24px;
+      }
+      .container {
+          display: flex;
+          flex-direction: column;
+      }
+      .anime-row {
+          margin-left: 20rem;
+      }
+      .anime-row .row {
+          grid-template-columns: 1fr 1fr;
+      }
+      .anime-row .text-heading {
+        margin-left: 0;
+      }
+      .MY_LIST {
+          margin-left: 20rem;
+      }
+      .MY_LIST .ROW {
+          grid-template-columns: 1fr 1fr;
+      }
+      .MY_LIST .TEXT_HEADING {
+          margin-left: 0rem;
+      }
+  }
+
+@media screen and (max-width: 768px) {
+    .header h1 {
+      font-size: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+      color: red;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .header h1 {
+        font-size: 15px;
+    }
+    .animeInfo {
+        display: none;
+    }
+    .anime-row {
+        margin-left: 0;
+    }
+    .anime-row .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .anime-row .text-heading {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .MY_LIST{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .MY_LIST .ROW {
+        display: flex;
+        flex-direction: column;
+    }
+    .header .search-box input{
+        width: auto;
+    }
+  }
+  
