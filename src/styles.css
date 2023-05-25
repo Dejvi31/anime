@@ -136,7 +136,7 @@ body {
     bottom: 20px;
     right: 50px;
     padding: 0.5rem;
-    background-color: rgb(211, 177, 145);
+    background-color: rgba(212, 187, 163, 0.9);
     font-size: 1rem;
     font-weight: bold;
 }
